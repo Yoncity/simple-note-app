@@ -96,10 +96,10 @@ p {
           transition: all 0.2s linear;
           cursor: pointer;
           &:hover {
-            background: #eee;
+            background: rgba($color: #f44336, $alpha: 0.15);
           }
           &:active {
-            background: #ddd;
+            background: rgba($color: #f44336, $alpha: 0.22);
           }
         }
         &:first-child {

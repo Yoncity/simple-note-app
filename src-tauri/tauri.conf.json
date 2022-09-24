@@ -7,11 +7,22 @@
   },
   "package": {
     "productName": "simple-notes-app",
-    "version": "0.0.0"
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "dialog": {
+        "save": true
+      },
+      "fs": {
+        "writeFile": true,
+        "removeFile": true,
+        "readFile": true,
+        "scope": ["$DOCUMENT/*", "$DESKTOP/*"]
+      },
+      "path": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
@@ -28,7 +39,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.yoncity.article.simple.note",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
